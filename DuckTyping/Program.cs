@@ -9,10 +9,10 @@ namespace DuckTyping
 {
     class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
             ExecuteDuckEnumeration();
-            await ExecuteDuckTask();
+            ExecuteDuckTask().Wait();
         }
 
         static void ExecuteDuckEnumeration()
